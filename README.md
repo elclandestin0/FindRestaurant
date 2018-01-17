@@ -1,5 +1,5 @@
 # FindRestaurant
-A Foursquare + Google Maps API mashup to find a restaurant's name, address and the image-url by inputting the restaurant niche name, and the coordinates of a city.
+A Foursquare + Google Maps API mashup to find a restaurant's name, venue_id and address of a restaurant niche type and it's location. 
 
 Simply clone/zip this file, open <code>findARestaurant.py</code> in your favourite text editor and compile it! Or, you can load up terminal and execute <code>python findARestaurant.py</code>. Message me if you have further details. 
 
