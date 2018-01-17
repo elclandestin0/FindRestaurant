@@ -14,7 +14,6 @@ def getGeocodeLocation(inputString):
     # the Google API key is intended for my use only. If you are interested
     # in working with this project, you can request your own API key from
     # Google on developers.google.com. Thank you for understanding
-
     google_api_key = "AIzaSyA-pnTIuJqwtfsInE9n1slQictD0FdJjNI"
     locationString = inputString.replace(" ", "+")
     url = ('https://maps.googleapis.com/maps/api/geocode/json?address=%s&key=%s' % (locationString, google_api_key))

@@ -41,5 +41,50 @@ def findARestaurant(mealType, location):
     }
     print restaurant_dict
 
-findARestaurant('Burger','Amsterdam')
+
+# def user():
+#     user_greeting = """Please select the following:
+#           1) Find the top 3 articles of all time OR
+#           2) Find the top authors of all time OR
+#           3) Find the day where more than 1 percent OR
+#           of the requests lead to errors OR
+#           0) Exit program \n"""
+#     user_input = input(user_greeting)
+#     if user_input == 1:
+#         first_query()
+#         user()
+#     elif user_input == 2:
+#         second_query()
+#         user()
+#     elif user_input == 3:
+#         third_query()
+#         user()
+#     elif user_input == 0:
+#         print "Good-bye.\n"
+#         sys.exit()
+#     else:
+#         print "Invalid input!\n"
+#         user()
+#
+# if __name__ == "__main__":
+#     user()
+
+def user():
+    mealType=""
+    location=""
+    user_greeting = '''
+    Hello and welcome to the findARestaurant program! This program
+    mashes up the Google Maps and Foursquare API. After inputting
+    the meal type and location of interest, the program responds back
+    with a dictionary of a restaurant name, address and it's id!
+    '''
+    meal_input = "Input the meal type: "
+    location_input = "Input the location: "
+    print user_greeting
+    mealType = raw_input(meal_input)
+    location = raw_input(location_input)
+    findARestaurant(mealType, location)
+
+if __name__ == "__main__":
+    user()
 # findARestaurant("Tea", "Amsterdam")
