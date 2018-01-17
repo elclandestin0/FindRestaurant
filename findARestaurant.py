@@ -14,7 +14,6 @@ sys.stderr = codecs.getwriter('utf8')(sys.stderr)
 foursquare_client_id = "PVYC4HWHSBIQWWKH4TKWR2UXGR5FVWKNIUEVKOKQVGM0BNFM"
 foursquare_client_secret = "IOOVRHSXQGICSDPULID0VPN23D35TFASEKBKJWLZKHAGMSYF"
 
-
 def findARestaurant(mealType, location):
     '''
     The function takes in the returned variables from getGeocodeLocation
@@ -41,34 +40,6 @@ def findARestaurant(mealType, location):
     }
     print restaurant_dict
 
-
-# def user():
-#     user_greeting = """Please select the following:
-#           1) Find the top 3 articles of all time OR
-#           2) Find the top authors of all time OR
-#           3) Find the day where more than 1 percent OR
-#           of the requests lead to errors OR
-#           0) Exit program \n"""
-#     user_input = input(user_greeting)
-#     if user_input == 1:
-#         first_query()
-#         user()
-#     elif user_input == 2:
-#         second_query()
-#         user()
-#     elif user_input == 3:
-#         third_query()
-#         user()
-#     elif user_input == 0:
-#         print "Good-bye.\n"
-#         sys.exit()
-#     else:
-#         print "Invalid input!\n"
-#         user()
-#
-# if __name__ == "__main__":
-#     user()
-
 def user():
     mealType=""
     location=""
@@ -87,4 +58,3 @@ def user():
 
 if __name__ == "__main__":
     user()
-# findARestaurant("Tea", "Amsterdam")
